@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta content="francisco seabra" name="author">
+      <meta content="cenas e ta" name="keywords">
+      <meta content="bue fixe vem ver" name="description">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- BOOTSTRAP CSS -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+
+      <!-- LIGAÇÃO AOS FICHEIROS DE ESTILOS PRÓPRIOS -->
+      <link href="css/estilos.css" rel="stylesheet">
+
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+      <title>Wonka - TempoTrufa</title>
+</head>
+
+<body >
+  
+<!-- Header LG -->
+<header class="container-fluid d-none d-sm-block bgcordark p2">
+  <section class="d-flex justify-content-between align-items-center">
+      <a href="perfil.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-circle"
+               viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+              <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+          </svg>
+      </a>
+
+
+
+
+
+
+
+
+      <div>
+          <a class="" href="homepage.html"> <img class="" src="img/wonka.png"> </a>
+
+      </div>
+
+      <a href="carrinho.html">
+          <button class="bg-transparent border-0 " type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-cart"
+                   viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+          </button>
+      </a>
+  </section>
+</header>
+
+
+
+
+
+
+
+
+<!-- Header SM -->
+<header class=" bgcordark container-fluid d-block d-sm-none">
+  <nav class="navbar bgcordark d-sm-none">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+              <div>
+                  <a class="" href="homepage.html"> <img class="" src="img/wonka.png"> </a>
+
+
+              </div>
+
+
+              <div>
+                  <a href="carrinho.html">
+                      <button class="bg-transparent border-0 " type="button">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-cart"
+                               viewBox="0 0 16 16">
+                              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>
+                      </button>
+                  </a>
+              </div>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header bgcordark border-bottom border-light">
+                  <h5 class="offcanvas-title text-white " id="offcanvasNavbarLabel" style="font-size: 40px;">Menu</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body bgcordark">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                          <a class="nav-link active text-white" aria-current="page" href="perfil.html" style="font-size: 25px;">Perfil</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active text-white" href="produtos.html" style="font-size: 25px;">Produtos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active text-white" aria-current="page" href="historia.html" style="font-size: 25px;">História</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active text-white" aria-current="page" href="contactos.html" style="font-size: 25px;">Contactos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active text-white" aria-current="page" href="equipa.html" style="font-size: 25px;">Equipa</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="historicodecompras.html" style="font-size: 25px;">Histórico de compras</a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+  <script src="script.js"></script>
+</header>
+
+<!-- NAV -->
+<nav class="container-fluid d-none d-sm-block bgcordark p2">
+  <ul class="nav justify-content-evenly">
+          <li class="nav-item">
+                  <a class="nav-link hover text-white " aria-current="page" href="produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="historia.html">História</a>
+          </li>
+          <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="contactos.html">Contactos</a>
+          </li>
+          <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="equipa.html">Equipa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="historicodecompras.html">Histórico de compras</a>
+    </li>
+         
+  </ul>
+</nav>
+
+
+<main >
+
+
+
+
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/chocolates/7.jpeg" alt="Chocolate Delícia" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h1 class="fs-2 fw-bold">TempoTrufa</h1>
+                <p class="fs-4 text-danger mt-3">19,99 &#8364</p>
+                <p class="fs-5 mt-4">
+                    Viaja no Tempo! Com a TempoTrufa, podes reviver aquele momento especial. Uma trufa deliciosa que te permite voltar no tempo por um breve instante.
+
+                </p>
+                <button class="btn btn-danger d-none d-lg-block">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2>Detalhes do Produto</h2>
+                <ul>
+                    <li>Ingredientes: Cacau, açúcar, leite, cacau, Pó de manipulação temporal</li>
+                    <li>Efeitos: Permite-te voltar no tempo por um minuto após a ingestão.</li>
+                    <li>Validade: 12 meses</li>
+                    <li>Valor Nutricional por porção: <ul>
+                      <li>Calorias: 50 kcal</li>
+                      <li>Gorduras: 3g</li>
+                      <li>Carboidratos: 6g</li>
+                      <li>Proteínas: 1g</li>
+                    </ul>
+
+                    </li>
+                </ul><button class="btn btn-danger d-lg-none">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="container py-5">
+      <h2>OUTRAS SUGESTÕES</h2>
+      <hr>
+       <div id="productCarousel" class="carousel slide container pt-5 d-none d-sm-block" data-bs-ride="carousel">
+      <div class="carousel-inner ">
+          <!-- First 4 items -->
+          <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                  <div class="text-center">
+                     <img src="img/chocolates/1.jpeg" alt="ChocoLevita" class="img-fluid product-image">
+                      <p class="fs-5 mt-3">ChocoLevita</p>
+                      <p class="fs-4 text-danger mt-3">19,99 €</p>
+                      <p class="fs-6 text-muted">999,5€/kg</p>
+                      <a href="produtoindividual1.html" class="btn btn-dark w-100">Comprar</a>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="text-center">
+                  <img src="img/chocolates/2.jpeg" alt="CacauCamufla" class="img-fluid product-image">
+                    <p class="fs-5 mt-3">CacauCamufla</p>
+                    <p class="fs-4 text-danger mt-3">19,99 €</p>
+                    <p class="fs-6 text-muted">999,5€/kg</p>
+                    <a href="produtoindividual2.html" class="btn btn-dark w-100">Comprar</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+              <div class="text-center">
+                 <img src="img/chocolates/3.jpeg" alt="DoceDormir" class="img-fluid product-image">
+                  <p class="fs-5 mt-3">DoceDormir</p>
+                  <p class="fs-4 text-danger mt-3">19,99 €</p>
+                  <p class="fs-6 text-muted">999,5€/kg</p>
+                  <a href="produtoindividual3.html" class="btn btn-dark w-100">Comprar</a>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="text-center">
+                <img src="img/chocolates/4.jpeg" alt="MemóriaMenta" class="img-fluid product-image">
+                <p class="fs-5 mt-3">MemóriaMenta</p>
+                <p class="fs-4 text-danger mt-3">19,99 €</p>
+                <p class="fs-6 text-muted">999,5€/kg</p>
+                <a href="produtoindividual4.html" class="btn btn-dark w-100">Comprar</a>
+            </div>
+        </div>
+              </div>
+          </div>
+          <!-- Second 4 items -->
+          <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                  <div class="text-center">
+                     <img src="img/chocolates/5.jpeg" alt="RisoRápido" class="img-fluid product-image">
+                      <p class="fs-5 mt-3">RisoRápido</p>
+                      <p class="fs-4 text-danger mt-3">19,99 €</p>
+                      <p class="fs-6 text-muted">999,5€/kg</p>
+                      <a href="produtoindividual5.html" class="btn btn-dark w-100">Comprar</a>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="text-center">
+                    <img src="img/chocolates/6.jpeg" alt="EuforiaEclética" class="img-fluid product-image">
+                    <p class="fs-5 mt-3">EuforiaEclética</p>
+                    <p class="fs-4 text-danger mt-3">19,99 €</p>
+                    <p class="fs-6 text-muted">999,5€/kg</p>
+                    <a href="produtoindividual6.html" class="btn btn-dark w-100">Comprar</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+              <div class="text-center">
+                  <img src="img/chocolates/7.jpeg" alt="TempoTrufa" class="img-fluid product-image">
+                  <p class="fs-5 mt-3">TempoTrufa</p>
+                  <p class="fs-4 text-danger mt-3">19,99 €</p>
+                  <p class="fs-6 text-muted">999,5€/kg</p>
+                  <a href="produtoindividual7.html" class="btn btn-dark w-100">Comprar</a>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="text-center">
+                <img src="img/chocolates/8.jpeg" alt="SaborSonoro" class="img-fluid product-image">
+                <p class="fs-5 mt-3">SaborSonoro</p>
+                <p class="fs-4 text-danger mt-3">19,99 €</p>
+                <p class="fs-6 text-muted">999,5€/kg</p>
+                <a href="produtoindividual8.html" class="btn btn-dark w-100">Comprar</a>
+            </div>
+        </div>
+              </div>
+          </div>
+          <!-- Third 4 items -->
+          <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                  <div class="text-center">
+                      <img src="img/chocolates/9.jpeg" alt="PuloPepita" class="img-fluid product-image">
+                      <p class="fs-5 mt-3">PuloPepita</p>
+                      <p class="fs-4 text-danger mt-3">19,99 €</p>
+                      <p class="fs-6 text-muted">999,5€/kg</p>
+                      <a href="produtoindividual9.html" class="btn btn-dark w-100">Comprar</a>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                <div class="text-center">
+                    <img src="img/chocolates/10.jpeg" alt="ForçaFondue" class="img-fluid product-image">
+                    <p class="fs-5 mt-3">ForçaFondue</p>
+                    <p class="fs-4 text-danger mt-3">19,99 €</p>
+                    <p class="fs-6 text-muted">999,5€/kg</p>
+                    <a href="produtoindividual10.html" class="btn btn-dark w-100">Comprar</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+              <div class="text-center">
+                  <img src="img/chocolates/11.jpeg" alt="FalaFudge" class="img-fluid product-image">
+                  <p class="fs-5 mt-3">FalaFudge</p>
+                  <p class="fs-4 text-danger mt-3">19,99 €</p>
+                  <p class="fs-6 text-muted">999,5€/kg</p>
+                  <a href="produtoindividual11.html" class="btn btn-dark w-100">Comprar</a>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="text-center">
+                <img src="img/chocolates/12.jpeg" alt="GirassolGourmet" class="img-fluid product-image">
+                <p class="fs-5 mt-3">GirassolGourmet</p>
+                <p class="fs-4 text-danger mt-3">19,99 €</p>
+                <p class="fs-6 text-muted">999,5€/kg</p>
+                <a href="produtoindividual12.html" class="btn btn-dark w-100">Comprar</a>
+            </div>
+        </div>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev h-75" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon btn btn-dark" aria-hidden="true" ></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next h-75" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon btn btn-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+
+    </section>
+
+    
+        <div class="row d-block d-sm-none p-3">
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="text-center">
+                <img src="img/chocolates/1.jpeg" alt="ChocoLevita" class="img-fluid product-image">
+                <p class="fs-5 mt-3">ChocoLevita</p>
+                <p class="fs-4 text-danger mt-3">19,99 €</p>
+                <p class="fs-6 text-muted">999,5€/kg</p>
+                <a href="produtoindividual1.html" class="btn btn-dark w-100">Comprar</a>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="text-center">
+              <img src="img/chocolates/2.jpeg" alt="CacauCamufla" class="img-fluid product-image">
+              <p class="fs-5 mt-3">CacauCamufla</p>
+              <p class="fs-4 text-danger mt-3">19,99 €</p>
+              <p class="fs-6 text-muted">999,5€/kg</p>
+              <a href="produtoindividual2.html" class="btn btn-dark w-100">Comprar</a>
+          </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="text-center">
+            <img src="img/chocolates/3.jpeg" alt="DoceDormir" class="img-fluid product-image">
+            <p class="fs-5 mt-3">DoceDormir</p>
+            <p class="fs-4 text-danger mt-3">19,99 €</p>
+            <p class="fs-6 text-muted">999,5€/kg</p>
+            <a href="produtoindividual3.html" class="btn btn-dark w-100">Comprar</a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="text-center">
+          <img src="img/chocolates/4.jpeg" alt="MemóriaMenta" class="img-fluid product-image">
+          <p class="fs-5 mt-3">MemóriaMenta</p>
+          <p class="fs-4 text-danger mt-3">19,99 €</p>
+          <p class="fs-6 text-muted">999,5€/kg</p>
+          <a href="produtoindividual4.html" class="btn btn-dark w-100">Comprar</a>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="text-center">
+            <img src="img/chocolates/5.jpeg" alt="RisoRápido" class="img-fluid product-image">
+            <p class="fs-5 mt-3">RisoRápido</p>
+            <p class="fs-4 text-danger mt-3">19,99 €</p>
+            <p class="fs-6 text-muted">999,5€/kg</p>
+            <a href="produtoindividual5.html" class="btn btn-dark w-100">Comprar</a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="text-center">
+          <img src="img/chocolates/6.jpeg" alt="EuforiaEclética" class="img-fluid product-image">
+          <p class="fs-5 mt-3">EuforiaEclética</p>
+          <p class="fs-4 text-danger mt-3">19,99 €</p>
+          <p class="fs-6 text-muted">999,5€/kg</p>
+          <a href="produtoindividual6.html" class="btn btn-dark w-100">Comprar</a>
+      </div>
+  </div>
+  <div class="col-md-3 col-sm-6 mb-4">
+    <div class="text-center">
+        <img src="img/chocolates/7.jpeg" alt="TempoTrufa" class="img-fluid product-image">
+        <p class="fs-5 mt-3">TempoTrufa</p>
+        <p class="fs-4 text-danger mt-3">19,99 €</p>
+        <p class="fs-6 text-muted">999,5€/kg</p>
+        <a href="produtoindividual7.html" class="btn btn-dark w-100">Comprar</a>
+    </div>
+</div>
+<div class="col-md-3 col-sm-6 mb-4">
+  <div class="text-center">
+      <img src="img/chocolates/8.jpeg" alt="SaborSonoro" class="img-fluid product-image">
+      <p class="fs-5 mt-3">SaborSonoro</p>
+      <p class="fs-4 text-danger mt-3">19,99 €</p>
+      <p class="fs-6 text-muted">999,5€/kg</p>
+      <a href="produtoindividual8.html" class="btn btn-dark w-100">Comprar</a>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6 mb-4">
+  <div class="text-center">
+      <img src="img/chocolates/9.jpeg" alt="PuloPepita" class="img-fluid product-image">
+      <p class="fs-5 mt-3">PuloPepita</p>
+      <p class="fs-4 text-danger mt-3">19,99 €</p>
+      <p class="fs-6 text-muted">999,5€/kg</p>
+      <a href="produtoindividual9.html" class="btn btn-dark w-100">Comprar</a>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6 mb-4">
+<div class="text-center">
+    <img src="img/chocolates/10.jpeg" alt="ForçaFondue" class="img-fluid product-image">
+    <p class="fs-5 mt-3">ForçaFondue</p>
+    <p class="fs-4 text-danger mt-3">19,99 €</p>
+    <p class="fs-6 text-muted">999,5€/kg</p>
+    <a href="produtoindividual10.html" class="btn btn-dark w-100">Comprar</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 mb-4">
+<div class="text-center">
+  <img src="img/chocolates/11.jpeg" alt="FalaFudge" class="img-fluid product-image">
+  <p class="fs-5 mt-3">FalaFudge</p>
+  <p class="fs-4 text-danger mt-3">19,99 €</p>
+  <p class="fs-6 text-muted">999,5€/kg</p>
+  <a href="produtoindividual11.html" class="btn btn-dark w-100">Comprar</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 mb-4">
+<div class="text-center">
+<img src="img/chocolates/12.jpeg" alt="GirassolGourmet" class="img-fluid product-image">
+<p class="fs-5 mt-3">GirassolGourmet</p>
+<p class="fs-4 text-danger mt-3">19,99 €</p>
+<p class="fs-6 text-muted">999,5€/kg</p>
+<a href="produtoindividual12.html" class="btn btn-dark w-100">Comprar</a>
+</div>
+</div>
+    
+
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+</main>
+
+
+<!-- FOOTER -->
+
+
+<footer class="bgcordark text-white text-center text-lg-start d-block">
+
+  <div  class="container p-4 ">
+ 
+    <div id="seabramegafooter" class="row">
+    
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Sobre Nós</h5>
+
+        <p>
+          A <i>Wonka Enterprises&trade;</i> é a única loja de chocolates mágicos <br> criados pelo próprio Willy Wonka. Cada pedaço de chocolate é <br> uma viagem ao mundo do sabor e da imaginação.
+        </p>
+      </div>
+
+      
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Páginas</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="homepage.html" class="text-white text-decoration-underline nav-link active">Homepage</a>
+          </li>
+          <li>
+            <a href="produtos.html" class="text-white text-decoration-underline nav-link active">Produtos</a>
+          </li> 
+          <li>
+            <a href="historia.html" class="text-white text-decoration-underline nav-link active">História</a>
+          </li>
+          <li>
+            <a href="equipa.html" class="text-white text-decoration-underline nav-link active">Equipa</a>
+          </li>
+          <li>
+          <a href="contactos.html" class="text-white text-decoration-underline nav-link active">Contactos</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Socials</h5>
+        <p>
+          
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="text-white text-decoration-none">
+            <i class=" icunesfooterlarge bi bi-instagram"></i>
+          </a>
+     
+          <a href="https://www.youtube.com/watch?v=y6120QOlsfU" class="text-white text-decoration-none">
+            <i class=" icunesfooterlarge bi bi-facebook"></i>
+          </a>
+         
+          <a href="https://www.youtube.com/watch?v=otNh9bTjXWg" class="text-white text-decoration-none">
+            <i class=" icunesfooterlarge bi bi-youtube"></i>
+          </a>
+        </p>
+        <h5 class="fw-normal">
+          Para mais informações contacte:
+        </h5>
+        <p>
+          969 459 665
+        </p>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  <div class="text-center p-3 bgcordarker " id="seabrafimfooter">
+    © 2024 Wonka enterprises 
+   
+  </div>
+
+  </footer>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js">
+  
+</script>
+
+
+</body>

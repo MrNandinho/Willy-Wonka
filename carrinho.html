@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+</head>
+<body >
+
+    <header class="container-fluid d-none d-sm-block bgcordark p2">
+        <section class="d-flex justify-content-between align-items-center">
+            <a href="perfil.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-circle"
+                     viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd"
+                          d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg>
+            </a>
+ 
+     
+            <div>
+                <a class="" href="homepage.html"> <img class="" src="img/wonka.png"> </a>
+     
+            </div>
+     
+            <a href="carrinho.html">
+                <button class="bg-transparent border-0 " type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-cart"
+                         viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg>
+                </button>
+            </a>
+        </section>
+     </header>
+     
+    <!-- Header SM -->
+<header class=" bgcordark container-fluid d-block d-sm-none">
+    <nav class="navbar bgcordark d-sm-none">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+  
+  
+                <div>
+                    <a class="" href="homepage.html"> <img class="" src="img/wonka.png"> </a>
+  
+  
+                </div>
+  
+  
+                <div>
+                    <a href="carrinho.html">
+                        <button class="bg-transparent border-0 " type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-cart"
+                                 viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header bgcordark border-bottom border-light">
+                    <h5 class="offcanvas-title text-white " id="offcanvasNavbarLabel" style="font-size: 40px;">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bgcordark">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="perfil.html" style="font-size: 25px;">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="produtos.html" style="font-size: 25px;">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="historia.html" style="font-size: 25px;">História</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="contactos.html" style="font-size: 25px;">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="equipa.html" style="font-size: 25px;">Equipa</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active text-white" aria-current="page" href="historicodecompras.html" style="font-size: 25px;">Histórico de compras</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+  </header>
+  
+  
+  <!-- NAV -->
+  <nav class="container-fluid d-none d-sm-block bgcordark p2">
+    <ul class="nav justify-content-evenly">
+            <li class="nav-item">
+                    <a class="nav-link hover text-white " aria-current="page" href="produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="historia.html">História</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="contactos.html">Contactos</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="equipa.html">Equipa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="historicodecompras.html">Histórico de compras</a>
+      </li>
+           
+    </ul>
+  </nav>
+  
+
+     
+    <main class="overflow-x-hidden">
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                    <button class="btn btn-link text-decoration-none text-dark d-inline d-md-none fs-1" onclick="history.back()">
+                        &lt;
+                    </button>
+                    <h2 class="text-end text-md-start w-100">CARRINHO DE COMPRAS</h2>
+                </div>
+            </div>
+            <hr>
+            <div class="table-responsive my-4">
+                <table class="table text-center align-items-center">
+                    <thead class="d-none d-md-table-header-group">
+                        <tr>
+                            <th scope="col">PRODUTO</th>
+                            <th scope="col">PREÇO</th>
+                            <th scope="col">QUANTIDADE</th>
+                            <th scope="col">SUBTOTAL</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Produto 1 -->
+                        <tr class="d-none d-md-table-row">
+                            <td class="align-middle p-0">
+                                <div class="d-flex align-items-center">
+                                    <img src="img/chocolates/12.jpeg" class="product-image rounded me-2 w-25" alt="Produto 1">
+                                    <span class="px-2 fw-semibold fs-3">GirassolGourmet</span>
+                                </div>
+                            </td>
+                            <td class="align-middle">19,99€</td>
+                            <td class="align-middle p-4">
+                                <input type="number" class="form-control quantity-input text-center" value="3" min="1">
+                            </td>
+                            <td class="align-middle">59,97€</td>
+                            <td class="align-middle px-5">
+                                <button class="btn btn-outline-danger btn-sm">&times;</button>
+                            </td>
+                        </tr>
+
+                        <!-- Produto 2 -->
+                        <tr class="d-none d-md-table-row">
+                            <td class="align-middle p-0">
+                                <div class="d-flex align-items-center">
+                                    <img src="img/chocolates/8.jpeg" class="product-image rounded me-2 w-25" alt="Produto 2">
+                                    <span class="px-2 fw-semibold fs-3">SaborSonoro</span>
+                                </div>
+                            </td>
+                            <td class="align-middle">19,99€</td>
+                            <td class="align-middle p-4">
+                                <input type="number" class="form-control quantity-input text-center" value="1" min="1">
+                            </td>
+                            <td class="align-middle">19,99€</td>
+                            <td class="align-middle px-5">
+                                <button class="btn btn-outline-danger btn-sm">&times;</button>
+                            </td>
+                        </tr>
+
+                        <!-- Produto 3 (Exemplo Adicional) -->
+                        <tr class="d-none d-md-table-row">
+                            <td class="align-middle p-0">
+                                <div class="d-flex align-items-center">
+                                    <img src="img/chocolates/7.jpeg" class="product-image rounded me-2 w-25" alt="Produto 3">
+                                    <span class="px-2 fw-semibold fs-3">TempoTrufa</span>
+                                </div>
+                            </td>
+                            <td class="align-middle">19,99€</td>
+                            <td class="align-middle p-4">
+                                <input type="number" class="form-control quantity-input text-center" value="1" min="1">
+                            </td>
+                            <td class="align-middle">19,99€</td>
+                            <td class="align-middle px-5">
+                                <button class="btn btn-outline-danger btn-sm">&times;</button>
+                            </td>
+                        </tr>
+
+                        <!-- Linhas para telas menores que `md` -->
+                        <tr class="d-md-none">
+                            <td colspan="5">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-start">
+                                        <img src="img/10.jpeg" class="product-image rounded me-2 w-25" alt="Produto 1">
+                                        <span class="px-2 fw-semibold fs-3">GirassolGourmet</span>
+                                    </div>
+                                    <button class="btn btn-outline-danger btn-sm">&times;</button>
+                                </div>
+                                <div class="d-flex justify-content-between mt-2">
+                                    <span>Preço: 19,99€</span>
+                                    <span>Subtotal: 59,97€</span>
+                                </div>
+                                <div class="mt-2">
+                                    <input type="number" class="form-control quantity-input text-center" value="3" min="1">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Repetir para outros produtos conforme necessário -->
+                        <tr class="d-md-none">
+                            <td colspan="5">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-start">
+                                        <img src="img/12.jpeg" class="product-image rounded me-2 w-25" alt="Produto 2">
+                                        <span class="px-2 fw-semibold fs-3">SaborSonoro</span>
+                                    </div>
+                                    <button class="btn btn-outline-danger btn-sm">&times;</button>
+                                </div>
+                                <div class="d-flex justify-content-between mt-2">
+                                    <span>Preço: 19,99€</span>
+                                    <span>Subtotal: 19,99€</span>
+                                </div>
+                                <div class="mt-2">
+                                    <input type="number" class="form-control quantity-input text-center" value="1" min="1">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- ... -->
+                        <tr class="d-md-none">
+                            <td colspan="5">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-start">
+                                        <img src="img/11.jpeg" class="product-image rounded me-2 w-25" alt="Produto 3">
+                                        <span class="px-2 fw-semibold fs-3">TempoTrufa</span>
+                                    </div>
+                                    <button class="btn btn-outline-danger btn-sm">&times;</button>
+                                </div>
+                                <div class="d-flex justify-content-between mt-2">
+                                    <span>Preço: 19,99€</span>
+                                    <span>Subtotal: 19,99€</span>
+                                </div>
+                                <div class="mt-2">
+                                    <input type="number" class="form-control quantity-input text-center" value="1" min="1">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12 d-flex justify-content-between">
+                    <span class="fw-bold fs-2">Total</span>
+                    <span class="fs-4">99,95€</span>
+                </div>
+                <hr class="my-0">
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-12">
+                    <a href="metododepagamento.html" class="d-block bg-warning text-center text-dark py-3 rounded-5 fs-4 text-decoration-none hover-btn">
+                        Métodos de Pagamento
+                    </a>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+
+
+<!-- FOOTER -->
+
+
+<footer class="bgcordark text-white text-center text-lg-start d-block">
+
+    <div  class="container p-4 ">
+   
+      <div id="seabramegafooter" class="row">
+      
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Sobre Nós</h5>
+  
+          <p>
+            A <i>Wonka Enterprises&trade;</i> é a única loja de chocolates mágicos <br> criados pelo próprio Willy Wonka. Cada pedaço de chocolate é <br> uma viagem ao mundo do sabor e da imaginação.
+          </p>
+        </div>
+
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Páginas</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="homepage.html" class="text-white text-decoration-underline nav-link active">Homepage</a>
+            </li>
+            <li>
+              <a href="produtos.html" class="text-white text-decoration-underline nav-link active">Produtos</a>
+            </li> 
+            <li>
+              <a href="historia.html" class="text-white text-decoration-underline nav-link active">História</a>
+            </li>
+            <li>
+              <a href="equipa.html" class="text-white text-decoration-underline nav-link active">Equipa</a>
+            </li>
+            <li>
+            <a href="contactos.html" class="text-white text-decoration-underline nav-link active">Contactos</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Socials</h5>
+          <p>
+            
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="text-white text-decoration-none">
+              <i class=" icunesfooterlarge bi bi-instagram"></i>
+            </a>
+       
+            <a href="https://www.youtube.com/watch?v=y6120QOlsfU" class="text-white text-decoration-none">
+              <i class=" icunesfooterlarge bi bi-facebook"></i>
+            </a>
+           
+            <a href="https://www.youtube.com/watch?v=otNh9bTjXWg" class="text-white text-decoration-none">
+              <i class=" icunesfooterlarge bi bi-youtube"></i>
+            </a>
+          </p>
+          <h5 class="fw-normal">
+            Para mais informações contacte:
+          </h5>
+          <p>
+            969 459 665
+          </p>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    <div class="text-center p-3 bgcordarker " id="seabrafimfooter">
+      © 2024 Wonka enterprises 
+     
+    </div>
+
+    </footer>
+ </body>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+</html>

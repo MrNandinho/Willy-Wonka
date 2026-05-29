@@ -1,0 +1,200 @@
+/* MEDIA QUERIES */
+@media only screen and (min-width: 576px) {
+    
+}
+
+@media only screen and (min-width: 768px) {
+ 
+}
+
+@media only screen and (min-width: 992px) {
+  
+
+}
+
+@media only screen and (min-width: 1200px) {
+    
+
+
+}
+@media only screen and (min-width: 1400px) {
+
+}
+
+
+
+.bgcormid{background-color: #CE2439;}
+.cormid{color: #CE2439;}
+.bgcorlight{background-color: #FFECCD;}
+.corlight{color: #FFECCD;}
+.bgcordark{background-color: #8D1339 ;}
+.cordark{color: #8D1339;}
+.bgcordarker {background-color: #790f31;}
+.cordarker {color:  #790f31;}
+.icunesfooterlarge {font-size: large;}
+
+body {
+   background-image: url('../img/design.jpg');
+ 
+ 
+ }
+
+
+footer {
+    background-image: url('../img/chococenafinal.png');
+    background-repeat: repeat-x;
+	
+}
+
+
+#seabramegafooter {margin-top: 11rem;}
+
+
+header img {
+   height: 5rem;
+}
+
+
+.nav-link:hover {
+    transition: all 0.5s;
+    color:gold !important
+}
+
+
+
+
+		
+.c-itens {
+   height: 480px
+}
+
+
+.c-img {
+   height: 100%
+}
+
+
+.historia-img {
+   height: 480px;
+   object-fit: cover;
+
+
+}
+.hover-btn {
+   transition: background-color 0.3s, color 0.3s;
+}
+.hover-btn:hover, .hover-btn:active {
+   background-color: white !important;
+   color: #790f31 !important;;
+}
+
+
+
+
+.navbar-toggler {
+    border-color: white;
+  }
+ 
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+  }
+ 
+  /* Altere a cor do ícone do botão btn-close para branco */
+  .btn-close-white {
+    filter: invert(1);
+  }
+
+
+
+
+
+  .avatar {
+   height: 120px;
+   width: 120px;
+}
+
+/* Estilos do tomas*/
+
+/* Estilos do tomas para o card*/
+.cardboxtomas{
+   padding-top: 5%!important;
+}
+@media screen and (min-width:768px){
+   .cardboxtomas{
+       padding: 2%!important;
+   }
+}
+.card {
+   position: relative;
+   overflow: hidden;
+   padding: 0 !important;
+}
+.card-img-overlay {
+   position: relative;
+}
+.card-img-overlay::before {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 70%;
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 60%));
+   z-index: 1;
+   object-fit: cover; /* Ensure the image covers the entire card */
+   border: none; /* Remove any border from the image */
+   margin: 0; /* Remove any margin from the image */
+   padding: 0; /* Remove any padding from the image */
+}
+.card-img-overlay .card-body{
+   position: relative;
+   z-index: 2;
+   color: white;
+}
+.card-img-overlay h5, .card-img-overlay h1{
+   z-index: 10;
+}
+h1{
+   font-size: 2.2rem !important;
+}
+.btn-circletomas{
+   width: 4.2rem !important;
+   height: 4.2rem !important;
+   padding: 10px 16px !important;
+   border-radius: 50% !important;
+   font-size: 10px !important;
+   text-align: center !important;
+   display: flex !important;
+   align-items: center !important;
+   justify-content: center !important;
+}
+.hoverlikdetalhestomas:hover{
+   border: white 2px solid;
+}
+
+
+.card img {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

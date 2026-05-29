@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="Eu" name="author">
+    <meta content="Chocolat,powers,wonka" name="keywords">
+    <meta content="Willy's wonka factory web store" name="description">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <!-- BOOTSTRAP CSS -->
+       <link href="css/bootstrap.css" rel="stylesheet">
+
+       <!-- LIGAÇÃO AOS FICHEIROS DE ESTILOS PRÓPRIOS -->
+       <link href="css/estilos.css" rel="stylesheet">
+ 
+       <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+
+    <title>Wonka - Histórico de compras</title>
+</head>
+<body>
+
+<!-- Header LG -->
+<header class="container-fluid d-none d-sm-block bgcordark p2">
+    <section class="d-flex justify-content-between align-items-center">
+        <a href="perfil.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-circle"
+                 viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd"
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            </svg>
+        </a>
+
+
+
+
+
+
+
+
+        <div>
+            <a class="" href="homepage.html"> <img class="" src="img/wonka.png"> </a>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <a href="carrinho.html">
+            <button class="bg-transparent border-0 " type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-cart"
+                     viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg>
+            </button>
+        </a>
+    </section>
+</header>
+
+
+
+
+
+
+
+
+<!-- Header SM -->
+<header class=" bgcordark container-fluid d-block d-sm-none">
+    <nav class="navbar bgcordark d-sm-none">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+  
+  
+                <div>
+                    <a class="" href="homepage.html"> <img class="" src="img/wonka.png"> </a>
+  
+  
+                </div>
+  
+  
+                <div>
+                    <a href="carrinho.html">
+                        <button class="bg-transparent border-0 " type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-cart"
+                                 viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header bgcordark border-bottom border-light">
+                    <h5 class="offcanvas-title text-white " id="offcanvasNavbarLabel" style="font-size: 40px;">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bgcordark">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="perfil.html" style="font-size: 25px;">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="produtos.html" style="font-size: 25px;">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="historia.html" style="font-size: 25px;">História</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="contactos.html" style="font-size: 25px;">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="equipa.html" style="font-size: 25px;">Equipa</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active text-white" aria-current="page" href="historicodecompras.html" style="font-size: 25px;">Histórico de compras</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+  </header>
+  
+  <!-- NAV -->
+  <nav class="container-fluid d-none d-sm-block bgcordark p2">
+    <ul class="nav justify-content-evenly">
+            <li class="nav-item">
+                    <a class="nav-link hover text-white " aria-current="page" href="produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="historia.html">História</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="contactos.html">Contactos</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="equipa.html">Equipa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="historicodecompras.html">Histórico de compras</a>
+      </li>
+           
+    </ul>
+  </nav>
+  
+<!-- MAiN -->
+
+<div class="container my-5">
+    <h1 class="text-center mb-4 fw-bolder">Histórico de Compras</h1>
+    <div class="row">
+        <div class="col-12 col-lg-6 mb-4">
+            <a class="text-decoration-none text-black" href="produtoindividual1.html"><div class="card">
+           <div class="row g-0">
+                    <div class="col-4">
+                        <img src="img/chocolevita2.jpg"  class="img-fluid">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <h2 class="card-title fw-bolder">Choco Levita</h2>
+                            <p class="card-text"><strong>Data da Compra:</strong> 15/06/2024</p>
+                            <p class="card-text"><strong>Quantidade:</strong> 3</p>
+                            <p class="card-text"><small class="text-muted">Última atualização: 3 minutos atrás</small></p>
+                        </div>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 mb-4">
+            <a class="text-decoration-none text-black" href="produtoindividual2.html"><div class="card">
+                <div class="row g-0">
+                    <div class="col-4">
+                        <img src="img/cacaucamufla2.jpg"  class="img-fluid">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <h2 class="card-title fw-bolder">Cacau Camufla</h2>
+                            <p class="card-text"><strong>Data da Compra:</strong> 15/06/2024</p>
+                            <p class="card-text"><strong>Quantidade:</strong> 2</p>
+                            <p class="card-text"><small class="text-muted">Última atualização: 3 minutos atrás</small></p>
+                        </div>
+                    </div>
+                </div></a>
+            </div>
+            </div>
+        <div class="col-12 col-lg-6 mb-4">
+            <a class="text-decoration-none text-black" href="produtoindividual6.html"><div class="card">
+                <div class="row g-0">
+                    <div class="col-4">
+                        <img src="img/euforiaecletica2.jpg"  class="img-fluid">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <h2 class="card-title fw-bolder">Euforia Eclética</h2>
+                            <p class="card-text"><strong>Data da Compra:</strong> 15/06/2024</p>
+                            <p class="card-text"><strong>Quantidade:</strong> 3</p>
+                            <p class="card-text"><small class="text-muted">Última atualização: 3 minutos atrás</small></p>
+                        </div>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 mb-4">
+            <a class="text-decoration-none text-black" href="produtoindividual11.html"><div class="card">
+                <div class="row g-0">
+                    <div class="col-4">
+                        <img src="img/falafudge2.jpg"  class="img-fluid">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <h2 class="card-title fw-bolder">Fala Fudge</h2>
+                            <p class="card-text"><strong>Data da Compra:</strong> 15/06/2024</p>
+                            <p class="card-text"><strong>Quantidade:</strong> 1</p>
+                            <p class="card-text"><small class="text-muted">Última atualização: 3 minutos atrás</small></p>
+                        </div>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- FOOTER -->
+
+
+<!-- FOOTER -->
+
+
+<footer class="bgcordark text-white text-center text-lg-start d-block">
+
+    <div  class="container p-4 ">
+   
+      <div id="seabramegafooter" class="row">
+      
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Sobre Nós</h5>
+  
+          <p>
+            A <i>Wonka Enterprises&trade;</i> é a única loja de chocolates mágicos <br> criados pelo próprio Willy Wonka. Cada pedaço de chocolate é <br> uma viagem ao mundo do sabor e da imaginação.
+          </p>
+        </div>
+
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Páginas</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="homepage.html" class="text-white text-decoration-underline nav-link active">Homepage</a>
+            </li>
+            <li>
+              <a href="produtos.html" class="text-white text-decoration-underline nav-link active">Produtos</a>
+            </li> 
+            <li>
+              <a href="historia.html" class="text-white text-decoration-underline nav-link active">História</a>
+            </li>
+            <li>
+              <a href="equipa.html" class="text-white text-decoration-underline nav-link active">Equipa</a>
+            </li>
+            <li>
+            <a href="contactos.html" class="text-white text-decoration-underline nav-link active">Contactos</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Socials</h5>
+          <p>
+            
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="text-white text-decoration-none">
+              <i class=" icunesfooterlarge bi bi-instagram"></i>
+            </a>
+       
+            <a href="https://www.youtube.com/watch?v=y6120QOlsfU" class="text-white text-decoration-none">
+              <i class=" icunesfooterlarge bi bi-facebook"></i>
+            </a>
+           
+            <a href="https://www.youtube.com/watch?v=otNh9bTjXWg" class="text-white text-decoration-none">
+              <i class=" icunesfooterlarge bi bi-youtube"></i>
+            </a>
+          </p>
+          <h5 class="fw-normal">
+            Para mais informações contacte:
+          </h5>
+          <p>
+            969 459 665
+          </p>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    <div class="text-center p-3 bgcordarker " id="seabrafimfooter">
+      © 2024 Wonka enterprises 
+     
+    </div>
+
+    </footer>
+
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js">
+ 
+
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js">
+  
+</script>
+
+
+</body>
+
+</html>

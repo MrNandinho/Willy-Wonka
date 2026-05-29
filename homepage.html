@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- BOOTSTRAP CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- LIGAÇÃO AOS FICHEIROS DE ESTILOS PRÓPRIOS -->
+    <link href="css/estilos.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/meusestilos.css">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+</head>
+<body>
+<!-- Header LG -->
+<header class="container-fluid d-none d-sm-block bgcordark p2">
+    <section class="d-flex justify-content-between align-items-center">
+        <a href="perfil.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-circle"
+                 viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd"
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            </svg>
+        </a>
+
+
+        <div>
+            <a class="" href="homepage.html"> <img class="" src="img/wonka.png"> </a>
+
+
+        </div>
+
+
+        <a href="carrinho.html">
+            <button class="bg-transparent border-0 " type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-cart"
+                     viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg>
+            </button>
+        </a>
+    </section>
+</header>
+
+
+<!-- Header SM -->
+<header class=" bgcordark container-fluid d-block d-sm-none">
+    <nav class="navbar bgcordark d-sm-none">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+  
+  
+                <div>
+                    <a class="" href="homepage.html"> <img class="" src="img/wonka.png"> </a>
+  
+  
+                </div>
+  
+  
+                <div>
+                    <a href="carrinho.html">
+                        <button class="bg-transparent border-0 " type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-cart"
+                                 viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header bgcordark border-bottom border-light">
+                    <h5 class="offcanvas-title text-white " id="offcanvasNavbarLabel" style="font-size: 40px;">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bgcordark">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="perfil.html" style="font-size: 25px;">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="produtos.html" style="font-size: 25px;">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="historia.html" style="font-size: 25px;">História</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="contactos.html" style="font-size: 25px;">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="equipa.html" style="font-size: 25px;">Equipa</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active text-white" aria-current="page" href="historicodecompras.html" style="font-size: 25px;">Histórico de compras</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+  </header>
+  
+  
+  <!-- NAV -->
+  <nav class="container-fluid d-none d-sm-block bgcordark p2">
+    <ul class="nav justify-content-evenly">
+            <li class="nav-item">
+                    <a class="nav-link hover text-white " aria-current="page" href="produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="historia.html">História</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="contactos.html">Contactos</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="equipa.html">Equipa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="historicodecompras.html">Histórico de compras</a>
+      </li>
+           
+    </ul>
+  </nav>
+  
+
+<!-- Carrousel -->
+<div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/imgcarousel1.jpg" class="d-block w-100 img-fluid"  alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="img/imgcarousel2.jpg" class="d-block w-100 img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="img/imgcarousel3.jpg" class="d-block w-100 img-fluid" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Produtos -->
+
+<h1 class="text-center m-3">
+    Produtos
+</h1>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <div class="card shadow-1-strong h-100 position-relative ">
+                <img src="img/chocolates/1.jpeg">
+                <div class="card-body text-white card-img-overlay">
+                    <h5 class="card-title">ChocoLevita</h5>
+                    <p class="card-text">
+                        Um chocolate que te faz levitar alguns centímetros do chão.
+                    </p>
+                    <div class=" position-absolute bottom-0 end-0 m-3 z-3">
+                        <a href="carrinho.html" class="btn btn-outline-light z-3">Comprar</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0 ">
+            <div class="card shadow-1-strong h-100 position-relative">
+                <img src="img/chocolates/3.jpeg">
+                <div class="card-body text-white card-img-overlay ">
+                    <h5 class="card-title">DoceDormir</h5>
+                    <p class="card-text">
+                        Este chocolate induz um sono tranquilo e sonhos coloridos.
+                    </p>
+                    <div class=" position-absolute bottom-0 end-0 m-3 z-3">
+                        <a href="carrinho.html" class="btn btn-outline-light z-3">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="card shadow-1-strong h-100 position-relative ">
+                <img src="img/chocolates/2.jpeg">
+                <div class="card-body text-white card-img-overlay">
+
+                    <h5 class="card-title">CacauCamufla</h5>
+                    <p class="card-text">
+                        Depois de comer este chocolate, podes-te tornar invisível por cinco minutos.
+                    </p>
+                    <div class="position-absolute bottom-0 end-0 m-3 z-3">
+                    <a href="carrinho.html" class="btn btn-outline-light z-3">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Willy Wonka -->
+<h1 class="text-center m-3">
+    História
+</h1>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 m-4">
+    <div class="col">
+        <div class="card h-100 position-relative">
+            <img src="img/Wonka.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Willy Wonka</h5>
+                <p class="card-text">Willy Wonka é conhecido por seu comportamento peculiar e sua aparência
+                    distintiva, frequentemente descrita como excêntrica. Ele é um inventor genial com uma mente
+                    brilhante e criativa, responsável por criar algumas das guloseimas mais incríveis e inovadoras do
+                    mundo. Entre suas criações estão os famosos chocolates que nunca derretem, os caramelos que mudam de
+                    cor e os chicles que duram para sempre. Sua fábrica é um lugar mágico, cheio de surpresas e
+                    maravilhas que capturam a imaginação de todos que a visitam.</p>
+                <div class="position-absolute bottom-0 end-0 m-3">
+                <a href="historia.html" class="btn btn-outline-dark">Ver mais</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 position-relative">
+            <img src="img/fabricachocolates.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Fábrica de chocolates</h5>
+                <p class="card-text m-0"> A fábrica de chocolates de Willy Wonka é um lugar mágico e cheio de mistérios,
+                    repleto de
+                    engenhocas e invenções extraordinárias.</p>
+                <p class="m-0"> A fábrica, que esteve fechada para o público por muitos anos, reabriu
+                    suas portas para um grupo seleto de crianças sortudas que encontraram os bilhetes dourados
+                    escondidos em barras de chocolate Wonka. </p>
+                <br>
+                <div class="position-absolute bottom-0 end-0 m-3">
+                <a href="historia.html" class="btn btn-outline-dark">Ver mais</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 position-relative">
+            <img src="img/Default_willy_wonka_chocolate_1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Os Maravilhosos Chocolates de Willy Wonka</h5>
+                <p class="card-text">A fábrica de chocolates de Willy Wonka é conhecida mundialmente pelas suas criações
+                    mágicas e inovadoras, que não só encantam o paladar, mas também a imaginação de quem os consome. A
+                    genialidade de Willy Wonka está presente em cada detalhe dos seus chocolates, transformando simples
+                    doces em experiências extraordinárias.</p>
+                <div class="position-absolute bottom-0 end-0 m-3">
+                <a href="historia.html" class="btn btn-outline-dark">Ver mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- FOOTER -->
+
+
+<footer class="bgcordark text-white text-center text-lg-start d-block">
+
+    <div  class="container p-4 ">
+   
+      <div id="seabramegafooter" class="row">
+      
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Sobre Nós</h5>
+  
+          <p>
+            A <i>Wonka Enterprises&trade;</i> é a única loja de chocolates mágicos <br> criados pelo próprio Willy Wonka. Cada pedaço de chocolate é <br> uma viagem ao mundo do sabor e da imaginação.
+          </p>
+        </div>
+
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Páginas</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="homepage.html" class="text-white text-decoration-underline nav-link active">Homepage</a>
+            </li>
+            <li>
+              <a href="produtos.html" class="text-white text-decoration-underline nav-link active">Produtos</a>
+            </li> 
+            <li>
+              <a href="historia.html" class="text-white text-decoration-underline nav-link active">História</a>
+            </li>
+            <li>
+              <a href="equipa.html" class="text-white text-decoration-underline nav-link active">Equipa</a>
+            </li>
+            <li>
+            <a href="contactos.html" class="text-white text-decoration-underline nav-link active">Contactos</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Socials</h5>
+          <p>
+            
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="text-white text-decoration-none">
+              <i class=" icunesfooterlarge bi bi-instagram"></i>
+            </a>
+       
+            <a href="https://www.youtube.com/watch?v=y6120QOlsfU" class="text-white text-decoration-none">
+              <i class=" icunesfooterlarge bi bi-facebook"></i>
+            </a>
+           
+            <a href="https://www.youtube.com/watch?v=otNh9bTjXWg" class="text-white text-decoration-none">
+              <i class=" icunesfooterlarge bi bi-youtube"></i>
+            </a>
+          </p>
+          <h5 class="fw-normal">
+            Para mais informações contacte:
+          </h5>
+          <p>
+            969 459 665
+          </p>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    <div class="text-center p-3 bgcordarker " id="seabrafimfooter">
+      © 2024 Wonka enterprises 
+     
+    </div>
+
+    </footer>
+
+
+
+
+
+<!--      FICHEIROS JAVASCRIPT-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
